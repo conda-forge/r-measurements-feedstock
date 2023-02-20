@@ -1,4 +1,4 @@
-{% set version = '1.4.0' %}
+{% set version = "1.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/measurements_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/measurements/measurements_{{ version }}.tar.gz
-  sha256: e62fb4619906e4b2b34dd69ed7d0d68eb33a9f95f2879faac4bcbf9df45630ce
+  sha256: d4e23e461b91f3c18b3b526ef21d83402df0abb5063b282798eb8bb0f06099c3
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -37,12 +37,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=measurements
   license: GPL-3.0-only
-  summary: Collection of tools to make working with physical measurements easier. Convert between
-    metric and imperial units, or calculate a dimension's unknown value from other dimensions'
-    measurements.
+  summary: Collection of tools to make working with physical measurements easier. Convert between metric and imperial units, or calculate a dimension's unknown value from other dimensions' measurements.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:

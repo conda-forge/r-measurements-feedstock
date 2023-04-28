@@ -1,4 +1,4 @@
-{% set version = "1.5.0" %}
+{% set version = "1.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/measurements_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/measurements/measurements_{{ version }}.tar.gz
-  sha256: d4e23e461b91f3c18b3b526ef21d83402df0abb5063b282798eb8bb0f06099c3
+  sha256: 09aec202f0d6bf58e3c9efdae6fb73f3b49d5b4f4013b5e9da686aa634973d18
 
 build:
   merge_build_host: true  # [win]

@@ -1,11 +1,11 @@
-About r-measurements
-====================
+About r-measurements-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-measurements-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=measurements
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-measurements-feedstock/blob/main/LICENSE.txt)
 
 Summary: Collection of tools to make working with physical measurements easier. Convert between metric and imperial units, or calculate a dimension's unknown value from other dimensions' measurements.
 
